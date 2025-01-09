@@ -59,6 +59,6 @@ struct VideoTrimmingView: View {
 
 
 
-//#Preview {
-//    VideoTrimmingView()
-//}
+#Preview {
+    VideoTrimmingView()
+}
