@@ -49,6 +49,7 @@ final class StrongSelfBootcampViewModel: ObservableObject {
     }
 
     //This is a weak reference
+    //N.B. Async/await tasks do not automatically cancel when the object is deallocated
     func updateData4() {
         Task { [weak self] in
             if let data = await self?.dataService.getData() {

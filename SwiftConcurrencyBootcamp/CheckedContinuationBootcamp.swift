@@ -18,6 +18,7 @@ class CheckedContinuationBootcampNetworkManager {
         }
     }
 
+    //returns once
     func getData2(url: URL) async throws -> Data {
         return try await withCheckedThrowingContinuation { continuation in
             URLSession.shared.dataTask(with: url) { data, response, error in
